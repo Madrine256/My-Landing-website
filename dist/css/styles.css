@@ -1,28 +1,18 @@
-*, *::before, *::after {
-  padding: 0;
-  margin: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
 header {
   color: #fff;
   background-color: #284b63;
   padding: 80px 0;
   text-align: center;
 }
-
 header h1 {
   font-size: 48px;
   margin: 0 0 16px 0;
 }
-
 header h2 {
   font-weight: 300;
   font-size: 24px;
   margin: 0 0 16px 0;
 }
-
 header .btn {
   display: inline-block;
   color: #fff;
@@ -35,9 +25,15 @@ header .btn {
   cursor: pointer;
   text-decoration: none;
 }
-
 header .btn:hover {
   background-color: #468486;
+}
+
+*, *::before, *::after {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .container {
@@ -55,17 +51,14 @@ section {
   background-color: #fff;
   color: #000;
 }
-
 .features .feature {
   width: 32%;
   display: inline-block;
   font-size: 16px;
 }
-
 .features .feature img {
   width: 40%;
 }
-
 .features .feature p {
   font-size: 20px;
   letter-spacing: 2px;
@@ -76,23 +69,19 @@ section {
   background-color: #549DA0;
   color: #fff;
 }
-
 .quote blockquote {
   margin: 0;
   padding: 0;
   text-align: center;
 }
-
 .quote blockquote p {
   margin: 0 0 5px 0;
   font-size: 24px;
 }
-
 .quote blockquote cite {
   font-size: 16px;
   font-style: italic;
 }
-
 .quote blockquote cite:before {
   content: "-";
   margin-right: 5px;
@@ -105,25 +94,72 @@ footer {
   color: #868686;
   font-size: 12px;
 }
-
 footer ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
-
 footer ul li {
   display: inline-block;
 }
-
 footer ul li a {
   padding: 6px;
   font-size: 14px;
   text-decoration: none;
   color: #c3c3c3;
 }
-
 footer ul li a:hover {
   color: white;
 }
-/*# sourceMappingURL=styles.css.map */
+
+@media screen and (max-width: 480px) {
+  header .btn {
+    display: block;
+    font-size: 18px;
+  }
+  header h1 {
+    font-size: 32px;
+    margin: 0 0 8px 0;
+  }
+  header h2 {
+    font-size: 18px;
+  }
+  section {
+    padding: 25px 0 15px 0;
+  }
+  .features .feature {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: left;
+    margin: 0 0 10px 0;
+  }
+  .features .feature img {
+    width: 15%;
+    min-width: 60px;
+    margin-right: 20px;
+  }
+  .quote {
+    padding: 30px 0;
+  }
+  .quote blockquote p {
+    font-size: 18px;
+  }
+  .quote blockquote cite {
+    font-size: 14px;
+  }
+  footer {
+    padding: 30px 0 10px 0;
+  }
+  footer ul li {
+    display: block;
+    margin: 5px 0;
+  }
+}/*# sourceMappingURL=styles.css.map */
